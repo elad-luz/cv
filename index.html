@@ -1,0 +1,51 @@
+<!-- added comment - not displayed -->
+<!-- for each tag opened, there should be a closing tag (or close at end with / at end)!!
+	 structure: <tag attribute="value"...> content </tag>
+	 learn: https://www.w3schools.com/html/default.asp -->
+<html>
+<head> <!-- stuff undet head is not displayed on page -->
+	<title>site name: my html course</title>
+	<link rel="stylesheet" href="css/styles.css"> <!-- linking to style sheet (use relative path) -->
+	<!-- comment out the stylesheet to see the efect -->
+</head>
+<body> <!-- content comes in here -->
+	<h1>welcome to html course !</h1>
+	<h2>practice size headlines.</h2>
+	text without tag - see list Below
+	<h3>un-ordered list<h3>
+	<ul>
+		<li>a</li>
+		<li>b</li>
+		<li>c</li>
+	</ul>
+	
+	<a href="https://www.w3schools.com/html/default.asp" target="_blank">Link to learn</a>
+	<!-- target="_blank" is to open in new page, without it it will swap existing page -->
+	<p> paragraph <u>underline</u> <br> <!-- <br/> is break line clean -->
+	<i>italic</i>
+	<b>bold</b> </p> <hr> <!-- <hr/> is break line + underline -->
+	
+	<h3>ordered list  (<u>see numbers instead of dots</u>)<h3>
+	<ol>
+		<li><b>a</b></li>
+		<li><i>b</i></li>
+		<li><a href="">link to nowhere</a></li> <!-- this anchor link have empty href! -->
+		<li class="red bigFont">css</li><!-- see css - using 2 classes togather .red & .bigFont -->
+	</ol>
+	
+	Using images & style: <br>
+	<img style="width:100px;" src="images/logo.jpg"> <!-- img src="relative path to index"/> --> <br>
+	<img src="https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_960_720.png" width="40%"> <!-- img from free pics web-site> --> 
+	
+	 <!-- css is a complementry file to help definr Cascading Style in Sheet (for division between content & function to its appearance & design) -->
+	<p>
+	<div class="bigFont"> Text in 'div' (using bigFont class)</div> <!-- used to define the places for design (css) -->
+	<span style="color:red" >Text in 'span'</span> <!-- design: color of texr -->
+	</p>
+	<p id="specialStyle">using id #</p>
+	<h2 style="background-color:yellow;color:blue">using style</h2>
+	 <!-- css is dificalt when design nedded in sites with many pages etc -
+	 so you have an external css sheet for it (style.css), that you refer to -->
+	
+</body>
+</html>

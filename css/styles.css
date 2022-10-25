@@ -1,0 +1,48 @@
+/* 	note css taking effect only if page use the reference:
+		<head>
+			<link rel="stylesheet" href="mystyle.css"> <!-- use relative path -->
+		</head>
+	the convention in sheet is:
+		tag name {
+		property: value;
+		} 
+*/
+
+img {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 1px;
+  /* width: 250px; - if you give sizing you should state only one width or height */
+}
+
+img:hover { /* on mouse-over */
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 75px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+
+
+h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; }
+
+body {
+	font-family: Arial; /* Arial, Helvetica, sans-serif; courier; */
+	background-color: eee;
+}
+
+/* .class could be implemented (one or more) in varied places as class="name1 name2" (without the dot) */
+.red {
+	color: red;
+}	
+
+.bigFont{
+	font-size: 24px;
+}
+
+ /* specific tag design by id # ->
+ to be implement (id="specialStyle")only for that tag-type with this id - not all tags of that type */
+#specialStyle {
+	width: 50%;
+	border: 2px solid red;
+	background-color: white;
+}
+
