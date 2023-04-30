@@ -1,51 +1,238 @@
-<!-- added comment - not displayed -->
-<!-- for each tag opened, there should be a closing tag (or close at end with / at end)!!
-	 structure: <tag attribute="value"...> content </tag>
-	 learn: https://www.w3schools.com/html/default.asp -->
+<!DOCTYPE html>
+<!-- for each tag opened, there should be a closing tag (or close at end with / at end) -> structure: <tag attribute="value"...;> content </tag> -->
 <html>
-<head> <!-- stuff undet head is not displayed on page -->
-	<title>site name: my html course</title>
-	<link rel="stylesheet" href="css/styles.css"> <!-- linking to style sheet (use relative path) -->
-	<!-- comment out the stylesheet to see the efect -->
+<!-- stuff under head is not displayed on page -->
+<head>
+	<title>Elad Luz | CV</title> <!-- title of browser's tab -->
+	<link rel="stylesheet" href="css/styles.css"> <!-- linkage to CSS style sheet (use relative path) -->
 </head>
-<body> <!-- content comes in here -->
-	<h1>welcome to html course !</h1>
-	<h2>practice size headlines.</h2>
-	text without tag - see list Below
-	<h3>un-ordered list<h3>
-	<ul>
-		<li>a</li>
-		<li>b</li>
-		<li>c</li>
+<!-- content of page comes in the body -->
+<body lang=EN-US>
+<!-- left side-bar -->
+<aside class="left-sidebar"> <!-- general design of sidebar -->
+<div class="top"> <!-- top padding design -->
+	<a href="https://www.linkedin.com/in/elad-luz/" target="_blank" title=" Elad Luz  |  Linkedin ">
+	<img style="width:113px;" src="img/me.png"> <!-- img src="relative path to index"/> -->	
+	</a>
+	<br><br><br>
+	<h1><a href="index.html" style="color:white; font-size:115%;" title=" Elad Luz | Top ">Elad Luz</a></h1> <!-- focus leads to ^ Top of Page -->
+	<br>
+	<p style="color:white;">Contact via Linkedin !</p></p>
+</div>
+<!-- mune navigation -->
+<nav class="left-nav">
+	<ul id="nav">
+		<li class="current"><a href="#about">About Myself</a></li> <!-- focus on about section -->
+		<li><a href="#experience">Experience</a></li> <!-- focus on experience section -->
+		<li><a href="#education">Education</a></li> <!-- focus on education section -->
+		<li><a href="#portfolio">Portfolio</a></li> <!-- focus on portfolio section -->
+		<li><a href="#hobby">Hobby</a></li> <!-- focus on hobby section -->
+		<!--  <li><a href="#end">END</a></li> <!-- focus on Footer section -->
 	</ul>
-	
-	<a href="https://www.w3schools.com/html/default.asp" target="_blank">Link to learn</a>
-	<!-- target="_blank" is to open in new page, without it it will swap existing page -->
-	<p> paragraph <u>underline</u> <br> <!-- <br/> is break line clean -->
-	<i>italic</i>
-	<b>bold</b> </p> <hr> <!-- <hr/> is break line + underline -->
-	
-	<h3>ordered list  (<u>see numbers instead of dots</u>)<h3>
-	<ol>
-		<li><b>a</b></li>
-		<li><i>b</i></li>
-		<li><a href="">link to nowhere</a></li> <!-- this anchor link have empty href! -->
-		<li class="red bigFont">css</li><!-- see css - using 2 classes togather .red & .bigFont -->
-	</ol>
-	
-	Using images & style: <br>
-	<img style="width:100px;" src="images/logo.jpg"> <!-- img src="relative path to index"/> --> <br>
-	<img src="https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_960_720.png" width="40%"> <!-- img from free pics web-site> --> 
-	
-	 <!-- css is a complementry file to help definr Cascading Style in Sheet (for division between content & function to its appearance & design) -->
-	<p>
-	<div class="bigFont"> Text in 'div' (using bigFont class)</div> <!-- used to define the places for design (css) -->
-	<span style="color:red" >Text in 'span'</span> <!-- design: color of texr -->
-	</p>
-	<p id="specialStyle">using id #</p>
-	<h2 style="background-color:yellow;color:blue">using style</h2>
-	 <!-- css is dificalt when design nedded in sites with many pages etc -
-	 so you have an external css sheet for it (style.css), that you refer to -->
-	
+</nav>
+</aside>
+<!-- central content of cv -->
+<!-- <tag id="specialStyle"> -> tag using specific design by id# that will effect only that tag-type => see the design in css: #specialStyle -- difference between id & class: a class="className" (in css: .className) name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page
+-->
+<div id="content">
+<div class="main-content">
+<!-- section anchored from sidebar -->
+	<section id="elad">
+	<hr>
+	<h2 class="title" style="color:#004560; font-size:200%;"><strong>Elad Luz</strong></h2>
+		<div class="section-content">
+			<p style="color:#004560;">Experienced Functional & Automation QA Engineer &nbsp; &raquo;&nbsp; Looking for a new job, with focus on Automation &nbsp; <a href="https://www.linkedin.com/in/elad-luz/" target="_blank" title=" Elad Luz  |  Linkedin ">&#10140;&nbsp; Click to view my <strong>Linkedin</strong></a>
+			</p>
+		</div>
+		</section>
+	<br><br>
+<!-- section anchored from sidebar -->
+	<section id="about">
+		<!-- content-header -->
+		<div class="content-header">
+			<h1>About Myself</h1>
+		</div>
+		<!-- content-title -->
+		<!-- Personal -->
+		<h2 class="title">Personal note</h2>
+		<!-- content-section -->
+		<div class="section-content">
+			<p>To begin with, I know its a cliché &nbsp;–&nbsp; yet still, &nbsp; I hope that this short & candid introduction, leaves a good impression about myself...&nbsp; &#128578;</p>
+				<ul> <!-- un-ordered List with Items -->
+					<li>I'm a Professional Software QA, with over 16 years experience in Testing Client \ Server Applications.</li>
+					<li>Products I worked on, were deployed in varied Platforms with Complex Architectures (including GCP Cloud with micro-services).</li>
+					<li>System Data (used & tested) resided on several kind of Data-Bases (including both SQL & Non-SQL DBs).</li>
+					<li>During the past 2 years I've been writing UI Automation tests, using Selenium with Java.</li>
+					<li>I have Methodological & Technical Knowledge, an Eye for Details, System-wide perspective & Understanding of Business Logic.</li>
+					<li>I'm a Team-player, and worked as part of several Dev-Squads.&nbsp; I know the value of Hard Work, Dedication & Passion for Quality.</li>
+					<li>I believe in a pro-active 'Get Things Done' approach, striving to make any Product meet the Best possible Quality.</li>
+					<li>I'm Reliable, Accountable, Motivated, Independent (needing minimal supervision) and always Meet Deadlines !</li>
+					<li>I'm looking for a new Position which will challenge my skills,&nbsp; and mainly allow my <strong>Automation potential</strong> to continue growing.</li>
+				</ul>
+			<br>
+			<p>&nbsp;&#128073;&nbsp; <strong>Recommenders</strong> ( <i>former directors managers & peers</i> ) &nbsp;–&nbsp; Available, and would be supplied upon request (with advance notice).</p>
+			<br>
+		</div>
+		<!-- Skills -->
+		<h2 class="title">My Skills & Knowlage</h2>
+		<div class="section-content">
+			<p>I possess many skills, but the following are those relevant for QA job</p>
+				<ul>
+					<li>Automation Tests :&nbsp; Write Tests and related Infra using Java + Selenium, TestNG, GIT, Maven, Jenkins & more</li>
+					<li>Manual Tests :&nbsp; Functional, E2E, Web \ Mobile Apps, UI, API, Compatibility, Correctness, Security, Integrations</li>
+					<li>Tools :&nbsp; JIRA, Quality Center, ClearQuest, Bugzilla -and- many other Tools (used during the process of testing)</li>
+					<li>Network :&nbsp; Fiddler \ Wire Shark sniffers, Browser Developers tool. Protocols (as Tester) : HTTP & TCP/IP, Rest</li>
+					<li>Databases :&nbsp; Relational  Oracle, MS-SQL, Postgre, Vertica | Non-SQL  Redis, Mongo, Aerospike, ElasticSearch</li>
+					<li>Operating Systems :&nbsp; Windows, Linux</li>
+					<li>Languages :&nbsp; Hebrew (mother tongue), English (as mother tongue – excellent written & spoken)</li>
+				</ul>
+		</div>		
+	</section>
+	<br><br><br>
+<!-- END of About Myself section -->
+<!-- section Work Experience anchored from sidebar -->
+	<section id="experience">
+		<div class="content-header">
+			<h1>Work Experience</h1>
+		</div>
+		<!-- Cybereason -->
+		<h2 class="title"><strong>06/2018 – 06/2022 &nbsp;&nbsp; | &nbsp;&nbsp; <a href="https://www.linkedin.com/products/cybereason-enterprise/" target="_blank" title=" Cybereason on Linkedin ">Cybereason</a> :</strong> &nbsp;&nbsp; Functional & Automation QA Engineer</h2>
+		<div class="section-content">
+		<p>I Worked on a <strong>Cyber Security</strong> Defensive EDR-System (aimed to detect & prevent cyber attacks). Product deployed on GCP cloud, with Linux servers & Dockerized microservices, Configured using Consul & Mongo, &nbsp;and its Data stored in Aerospike & ElasticSearch.</p>
+		<p>I performed Functional & Automation QA tasks, as part of the Data-infra & HUNT solution Dev-Squad, working in Agile Methodologies.</p>
+			<ul>
+				<li><strong>Automation</strong> (using Selenium & Java): Automated the Functional E2E Sanity-suite Test-cases, for CI Nightly-run:</li>
+					<ul>
+						<li>Implement & Automate E2E Test Cases of UI Functionality for Full Coverage, and add relevant Page elements to INFRA</li>
+						<li>Execute & Monitor Jenkins Nightly job (reporting to a Slack channel), and Run suite on demand, upon each Sanity Cycle</li>
+					</ul>
+				<br>	
+				<li><strong>Functional</strong> (working with JIRA): Performed all Manual QA tasks  of the Hunt-Investigation UI solution:</li>
+					<ul>
+						<li>Review Feature-Designs and Requirements (with stakeholders: Product, Data Architect, UX & Developers)</li>
+						<li>Design Test Plan with Functional E2E Test Cases (STP \ STD) for full Coverage of Spec docs (SRD \ SRS)</li>
+						<li>Execution of Sanity, Progression & Regression testing cycles</li>
+						<li>Bugs Analysis & Open issues found, Validate fixes & Conclude Results in Status Report (STR)</li>
+						<li>Deploy Environments (on Linux VMs), Configure (in Consul), integrate (with Docker microservices)</li>
+						<li>Knowledge Transfer to Train new employees, Wrote How-to Wikis on a shared location (Confluence)</li>
+					</ul>
+			</ul>
+		<p>&nbsp;&#128073;&nbsp; <strong>Recommenders</strong> ( <i>former directors managers & peers</i> ) &nbsp;–&nbsp; Available, and would be supplied upon request (with advance notice).</p>
+		</div>
+		<br>
+		<!-- HPE -->
+		<h2 class="title"><strong>09/2012 – 12/2017 &nbsp;&nbsp; | &nbsp;&nbsp; HPE</strong> &nbsp;( former hp mercury ) <strong>:</strong> &nbsp;&nbsp; Senior QA Engineer</h2>
+		<div class="section-content">
+		<p>Worked on a <strong>Monitoring Apps</strong> Product (deployed on Linux Servers with DBs: PostgreSQL Vertica & Radis),  for Tracking & Measure User Experience on Mobile \ Web Applications (availability, performance, response-time & user behavior within application).</p>
+		<p>I performed Functional QA (working with QC): Requirements Review, Plan & Execute Manual Tests, Analyze & Report Bugs (and more).</p>
+		<p>Worked in Agile Lifecycle (scrum teams & sprints of bite-size features, quick to reach production).</p>
+		</div>
+		<br>
+		<!-- Comverse -->
+		<h2 class="title"><strong>08/2008 – 08/2012 &nbsp;&nbsp; | &nbsp;&nbsp; Comverse</strong> &nbsp;( currently xura ) <strong>:</strong> &nbsp;&nbsp; Manual QA Engineer</h2>
+		<div class="section-content">
+		<p>Worked on a <strong>Telecom Instant-Messages</strong> Product (deployed on Linux Servers & Oracle DB),  for Managing Mobile IM systems.</p>
+		<p>I performed Manual QA: Review Design, Write & Execute Tests, Report & Manage Bugs, Deploy Labs etc.</p>
+		<p>Was part of a Task-force doing Acceptance Testing for products deployed at 3 Customers Sites in North-America (VzW, Rogers, AT&T).</p>
+		<p>Worked in Waterfall Lifecycle (as part of QA team,&nbsp; getting huge content per each delivery, with long time till features reach production).</p>
+		</div>
+		<br>
+		<!-- TripCart -->
+		<h2 class="title"><strong>05/2006 – 07/2008 &nbsp;&nbsp; | &nbsp;&nbsp; TripCart.com</strong> &nbsp;( currently obsolete ) <strong>:</strong> &nbsp;&nbsp; QA Tester</h2>
+		<div class="section-content">
+		<p>Worked on a <strong>Travel Planning website</strong> Product (deployed on Windows Server & MS-SQL DB) from its initial state.</p>
+		<p>I Oversaw Quality (during development): Features Review, Write & Execute Tests (manual & performance-response-time), Manage Bugs.</p>
+		</div>
+		<br>
+		<!-- Ness -->
+		<h2 class="title"><strong>01/2005 – 04/2006 &nbsp;&nbsp; | &nbsp;&nbsp; Ness</strong> &nbsp;( on Tel Ha-Shomer hospital ) <strong>:</strong> &nbsp;&nbsp; Sys Admin & Technician</h2>
+		<div class="section-content">
+		<p>Worked on a <strong>Hospital</strong> as Sys Admin & Technician for Computers & Network, Domain Management and Support Internal (on Site) Apps.</p>
+		</div>
+		<br>
+	</section>
+	<br><br><br>
+<!-- END of Work Experience section -->
+<!-- section Education anchored from sidebar -->
+	<section id="education">
+		<div class="content-header">
+			<h1>Education</h1>
+		</div>
+		<h2 class="title">Technical & Academic qualifications (by graduation years)</h2>
+		<div class="section-content">
+			<ul>
+				<!-- <li>2023 – Automation course: Postman & RestAssured (API), Appium (Mobile), Dockers (at: automation.co.il)</li> -->
+				<li>2022 – Automation course 2: Maven, Allure, GIT & Jenkins (at: automation.co.il)</li>
+				<li>2018 – Automation course 1: Java, Selenium & TestNG (at: automation.co.il)</li>
+				<li>2017 – Technological courses: QA Security, Big-Data Technologies, Linux</li>
+				<li>2012 – Certified ISTQB diploma: Software Quality Assurance & Testing Methodologies</li>
+				<li>2004 – Certified DBA course: Oracle & MS SQL -also- Microsoft MCP</li>
+				<li>2001 – Master of Arts (MA degree) – in: Study of Contemporary Art (from: University of Liverpool)</li>
+				<li>1997 – Teacher diploma (BA equivalent) – in: Fine Art & Art History (from: Beit Berl Art School)</li>
+			</ul>
+		</div>
+	</section>
+	<br><br><br>
+<!-- END of Education section -->
+<!-- section Portfolio anchored from sidebar -->
+	<section id="portfolio">
+		<div class="content-header">
+			<h1>Portfolio</h1>
+		</div>
+		<h2 class="title">Project 1</h2>
+		<div class="section-content">
+			<ul>
+				<li>A...</li>
+					<ol>
+						<li>X</li>
+						<li>Y</li>
+						<li>Z</li>
+					</ol>
+				<li>B...</li>
+				<br>
+				<li>C...</li>
+			</ul>
+			<p><a target="_blank" href="">LINK</a></p>
+		</div>
+	</section>
+	<br><br><br>
+<!-- END of Portfolio section -->
+<!-- section Hobby anchored from sidebar -->
+	<section id="hobby">
+		<div class="content-header">
+			<h1>Hobby</h1>
+		</div>
+		<h2 class="title">Growing Bonsai</h2>
+		<div class="section-content">
+			<p><strong>Bonsai</strong>&nbsp; is the Japanese art of growing miniature trees in pots.</p>
+			<p>Naturalistic Bonsai is a delicate art-form which implements various techniques to produce a natural-looking tree in a small pot, one that attempt to mimic the shape of a large scale real-life tree. This idea of "Naturalism" is thus not natural at all, but is a man making of things, so they look as if they happened Naturally.</p>
+			<p>Practice the craft of Bonsai growing is almost like Meditation. In the process of contemplation, you need to pay attention to natural examples you appreciate, while trying to emulate them to the best you can. The objective is to produce a tree, that eventually looks like nobody worked on it, as if it just happened to grow this way -and- which possesses the elusive character of 'Beauty'.</p>
+			<p>When I was younger (since childhood), I had always dreamed of growing Bonsai. As life progressed, I waited till my mind settled - till I possessed the inner patience for this kind of task. Several years ago, I reached that spot, and started to learn about bonsai-making, and what it takes to create it.</p>
+			<p>Soon after, I've started to grow My little Collection of "seedlings" (sprouting plant from a seed) and "cuttings" (to propagate plants from shoots branches & developing their roots), from Trees I knew for all my life (collected from my birth-place on Kibbutz Degania B').</p>
+			<p>As I progressed each passing year, I found it more interesting and got more fascinated by it. And, as years go by, and as my plants starts taking shape, there is a real rewarding feeling that comes with it - it is worth the effort put in to it.</p>
+			<p>The following link leads to the bonsai master I studied from, via YouTube <a target="_blank" href="https://www.youtube.com/c/nigelsaundersthebonsaizone/videos" title=" The Bonsai Zone ">The Bonsai Zone</a>.</p>
+			<br>
+			<p>Below, I added several photos of my litle porch garden bonsais:</p>
+			<br>
+			<img src="img/bonsai.PNG">
+		</div>
+	</section>
+	<br><br>
+<!-- END of Hobby section -->
+<!-- footer section -->
+	<section id="end">
+		<div class="content-header">
+			<h3>
+				<a href="https://www.linkedin.com/in/elad-luz/" target="_blank" title=" Elad Luz  |  Linkedin ">
+					<strong>&Gt; &nbsp;&nbsp;&nbsp;&nbsp; Click to view my Linkedin &nbsp;&nbsp;&nbsp;&nbsp; &Lt;</strong>
+				</a>
+			</h3>
+		</div>
+	<hr>
+	</section>
+	<br>
+<!-- END of footer section -->
+</div>
+</div>
 </body>
 </html>
