@@ -1,12 +1,51 @@
-/* 	note css taking effect only if page use the reference:
+/* 	note: styles defined (in css), taking effect only if html page uses the reference to it:
 		<head>
-			<link rel="stylesheet" href="mystyle.css"> <!-- use relative path -->
+			<link rel="stylesheet" href="mystyle.css"> <!-- comment: use a relative path -->
 		</head>
 	the convention in sheet is:
 		tag name {
 		property: value;
 		} 
 */
+body{ /* drill to all included under body */
+    font-family: "Arial";
+	font-size:12px;
+	line-height:12px;
+	/* color: 777; => font color shaded gray */
+	/* background-color: eee; => lighet gray*/
+}
+
+p{
+	margin:0;
+}
+
+a {
+    color: #aa0a5f;
+}
+
+a, a:hover, a:focus{
+	text-decoration: none;
+	outline: 0;
+}
+
+h1, h2, h3 { /* headlines */
+    /* color: #777; => font colot for all is a shade of gray -> going darker --> color:#666; or #333; (see use below)*/
+	margin:0;
+    font-weight: normal;
+}
+
+h1 { font-size: 24px; color: #666} /* { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 75px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; } */
+h2 { font-size: 18px; color: #666} /* h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; } */
+h3 { font-size: 12px; color: #666}
+
+strong {
+  letter-spacing: 1px;
+}
+
+section p {
+  line-height: 24px;
+  color: #666
+}
 
 img {
   border: 1px solid #ccc;
@@ -19,30 +58,96 @@ img:hover { /* on mouse-over */
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 75px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+/* note: ".class" could be implemented (one or more) in varied places as class="name1 name2" (without the dot) -
+could also use: .margin-bottom{ margin-bottom: 15px; } if needed... */
 
-
-h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; }
-
-body {
-	font-family: Arial; /* Arial, Helvetica, sans-serif; courier; */
-	background-color: eee;
+.center {
+    text-align: center;
 }
 
-/* .class could be implemented (one or more) in varied places as class="name1 name2" (without the dot) */
-.red {
-	color: red;
-}	
-
-.bigFont{
-	font-size: 24px;
+.title {
+    margin: 25px 0 15px;
 }
 
- /* specific tag design by id # ->
- to be implement (id="specialStyle")only for that tag-type with this id - not all tags of that type */
-#specialStyle {
-	width: 50%;
-	border: 2px solid red;
-	background-color: white;
+.main-content section {
+  margin: 0 4%;
 }
 
+.left-sidebar { /* left side blue (menue plaace) */
+    background-color: #004560; /* ORIG: #015360 */
+    float: left;
+    min-height: 100%;
+    position: fixed;
+    width: 178px;
+}
+
+.top { /* top of left-sidebar */
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.top h1{ /* headline of left-sidebar */
+    color: #fff; /* white */
+    font-weight: 700;
+    /* text-transform: uppercase; */
+}
+.left-nav ul { /* left sidebar - munu navigation */
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.left-nav ul li a {
+    color: #fff; /* white */
+    display: block;
+    padding: 10px 35px; /* see below for transition:
+    -webkit-transition: all 0.3s ease-in 0s;
+       -moz-transition: all 0.3s ease-in 0s;
+        -ms-transition: all 0.3s ease-in 0s;
+         -o-transition: all 0.3s ease-in 0s;
+            transition: all 0.3s ease-in 0s; */
+}
+
+.left-nav ul li a:hover, .left-nav ul li .current { /* change design on hover (mouse-over) */
+    background-color: #fff;  /* white */
+    color: #000; /* black */
+}
+
+/*  note: "#" specific tag design by id ->
+to be implement (id="specialStyle"), only for that tag-type with this id - not all tags of that type! */
+
+#content { /* main part of page*/
+    padding-left: 175px;
+	/* float: left; */
+	/* margin-left: 20%; */
+	/* width: 100%; */
+	width: 925px;
+}
+
+.content-header {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    /* margin-top: 25px; */
+    padding: 15px 0 15px;
+    text-align: center;
+}
+
+.section-content {
+	color: #666; /* general text color within a section (derk gray)*/
+    font-size: 14px; /* 16px; */
+    line-height: 15px; /* 25px; */
+	/* margin: 30px auto 0; */
+}
+
+.section-content ul ol {
+    margin-bottom: 14px; /* 15px; */
+} 
+.section-content li {
+    margin-bottom: 8px; /* 15px; */
+	font-size: 14px; 
+	line-height: 1.5em;
+}
+
+.section-content a:hover {
+    text-decoration: underline;
+}
