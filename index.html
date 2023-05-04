@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<!-- for each tag opened, there should be a closing tag (or close at end with / at end) -> structure: <tag attribute="value"...;> content </tag> -->
+<!-- for each tag opened, there should be a closing tag (or close at end with / at end) ->
+structure: <tag attribute="value"...;> content </tag>
+learn: https://www.w3schools.com/html/default.asp -->
 <html>
 <!-- stuff under head is not displayed on page -->
 <head>
 	<title>Elad Luz | CV</title> <!-- title of browser's tab -->
-	<link rel="stylesheet" href="css/styles.css"> <!-- linkage to CSS style sheet (use relative path) -->
+	<link rel="stylesheet" href="css/styles.css"> <!-- linkage to CSS style sheet (use relative path) -> comment out the to see the efect -->
 </head>
 <!-- content of page comes in the body -->
 <body lang=EN-US>
 <!-- left side-bar -->
 <aside class="left-sidebar"> <!-- general design of sidebar -->
 <div class="top"> <!-- top padding design -->
+	<!-- using an anchchor link tag with target="_blank" is to open in new page, without it - it will swap existing page -->
+	<!-- <a href="">link to nowhere</a> -> this anchor link have empty href! -->
 	<a href="https://www.linkedin.com/in/elad-luz/" target="_blank" title=" Elad Luz  |  Linkedin ">
-	<img style="width:113px;" src="img/me.png"> <!-- img src="relative path to index"/> -->	
+	<img style="width:113px;" src="img/me.png"> <!-- img src="relative path to index"/> -->
 	</a>
-	<br><br><br>
+	<br><br><br>  <!-- <br/> is break line clean -> also, <hr/> is break line + underline -->
 	<h1><a href="index.html" style="color:white; font-size:115%;" title=" Elad Luz | Top ">Elad Luz</a></h1> <!-- focus leads to ^ Top of Page -->
 	<br>
 	<p style="color:white;">contact via Linkedin &mapstoup;</p>
@@ -39,10 +43,10 @@
 <!-- section anchored from sidebar -->
 	<section id="elad">
 	<hr>
-	<h2 class="title" style="color:#004560; font-size:200%;"><strong>Elad Luz</strong></h2>
+	<h2 class="title" style="color:#004560; font-size:200%;"><strong>Elad Luz</strong></h2> <!-- strong = b -> Bold! -->
 		<div class="section-content">
 			<p style="color:#004560;">I am an <b>Experienced Functional QA</b>&nbsp; and &nbsp;<b>Automation Engineer</b>&nbsp; <b>&raquo;</b> &nbsp; I am Looking for a new position, maimly with focus on Automation<br>
-			<a href="https://www.linkedin.com/in/elad-luz/" target="_blank" title=" Elad Luz  |  Linkedin "><b>&#10140;</b>&nbsp; Click to view my <strong>Linkedin</strong></a></p>
+			<a href="https://www.linkedin.com/in/elad-luz/" target="_blank" title=" Elad Luz  |  Linkedin "><b>&#10140;</b>&nbsp;<b>Linkedin : </b>&nbsp; click to view my profile &nbsp;–&nbsp; and also, for contacting me</a></p>
 		</div>
 		</section>
 	<br><br>
@@ -57,29 +61,31 @@
 		<h2 class="title">Personal note</h2>
 		<!-- content-section -->
 		<div class="section-content">
-			<p>To begin with, I know its a cliché &nbsp;–&nbsp; yet still, &nbsp; I hope that this short & candid introduction, leaves a good impression about myself...&nbsp; &#128578;</p>
+			<p>To begin with, I know its a cliché &nbsp;–&nbsp; yet still, &nbsp; I hope that this short & candid introduction, leaves a good impression about myself ...&nbsp; &#128578;</p>
 				<ul> <!-- un-ordered List with Items -->
-					<li>I'm a Professional Software QA, with over 17 years experience in Testing Client \ Server Applications.</li>
-					<li>Products I worked on, were deployed in varied Platforms with Complex Architectures (including GCP Cloud with micro-services).</li>
-					<li>System Data (used & tested) resided on several kind of Data-Bases (including both SQL & Non-SQL DBs).</li>
-					<li>During the past 2 years I've been writing UI Automation tests, using Selenium with Java.</li>
+					<li>I'm a <b>Professional Software QA</b>, with over 17 years experience in Testing Client \ Server (on Linux) Applications.</li>
+					<li>Products I worked on, were deployed on varied Platforms with Complex Architectures (including on 'Cloud', with micro-services).</li>
+					<li>Products' Relevant Data (being used for testing), resided on several kind of Data-Bases (including both&nbsp;  SQL & &nbsp;Non-SQL &nbsp;DBs).</li>
+					<li>I got extensive experience in Planning & Executing &nbsp;<b>Functionality</b>, UI, DB, System & Integration Tests.</li>
+					<li>During the last 2 years as a QA - I have been writing <b>UI Automation tests</b>, using Selenium (with Java).</li>
 					<li>I have Methodological & Technical Knowledge, an Eye for Details, System-wide perspective & Understanding of Business Logic.</li>
 					<li>I'm a Team-player, and worked as part of several Dev-Squads.&nbsp; I know the value of Hard Work, Dedication & Passion for Quality.</li>
 					<li>I believe in a pro-active 'Get Things Done' approach, striving to make any Product meet the Best possible Quality.</li>
-					<li>I'm Reliable, Accountable, Motivated, Independent (needing minimal supervision) and always Meet Deadlines !</li>
+					<li>I'm Reliable, Accountable, Motivated, Independent (needing minimal supervision) and always Meet my Deadlines!</li>
 					<li>I'm looking for a new Position which will challenge my skills,&nbsp; and mainly allow my <strong>Automation potential</strong> to continue growing.</li>
 				</ul>
 			<br>
-			<p>&nbsp;&#128073;&nbsp; <strong>Recommenders</strong> ( <i>former directors managers & peers</i> ) &nbsp;–&nbsp; Available, and would be supplied upon request (with advance notice).</p>
+			<p>&nbsp;&#128073;&nbsp; <strong>Recommenders</strong> (former directors, managers & peers) &nbsp;–&nbsp; Available, &nbsp;and would be supplied upon request, &nbsp;with advance notice.</p>
 			<br>
 		</div>
 		<!-- Skills -->
 		<h2 class="title">My Skills & Knowlage</h2>
 		<div class="section-content">
-			<p>I possess many skills, but the following are those relevant for QA job</p>
+			<p>Following skills, are those mostly relevant for My job as a &nbsp;<b>Software QA – Automation & Functional Test Engineer</b></p>
 				<ul>
 					<li>Automation Tests :&nbsp; Write Tests and related Infra using Java + Selenium, TestNG, GIT, Maven, Jenkins & more</li>
 					<li>Manual Tests :&nbsp; Functional, E2E, Web \ Mobile Apps, UI, API, Compatibility, Correctness, Security, Integrations</li>
+					<li>API :&nbsp; SoapUI, Postman &nbsp; (and also –&nbsp; <i>soon, I'm about to start a course of</i> API Automation, using RestAssured)</li>
 					<li>Tools :&nbsp; JIRA, Quality Center, ClearQuest, Bugzilla -and- many other Tools (used during the process of testing)</li>
 					<li>Network :&nbsp; Fiddler \ Wire Shark sniffers, Browser Developers tool. Protocols (as Tester) : HTTP & TCP/IP, Rest</li>
 					<li>Databases :&nbsp; Relational  Oracle, MS-SQL, Postgre, Vertica | Non-SQL  Redis, Mongo, Aerospike, ElasticSearch</li>
@@ -96,52 +102,60 @@
 			<h1>Work Experience</h1>
 		</div>
 		<!-- Cybereason -->
-		<h2 class="title"><strong>06/2018 – 06/2022 &nbsp;&nbsp; | &nbsp;&nbsp; <a href="https://www.linkedin.com/products/cybereason-enterprise/" target="_blank" title=" Cybereason on Linkedin ">Cybereason</a> :</strong> &nbsp;&nbsp; Functional & Automation QA Engineer</h2>
+		<h2 class="title"><strong>06/2018 – 07/2022 &nbsp;&nbsp; | &nbsp;&nbsp; <a href="https://www.linkedin.com/products/cybereason-enterprise/" target="_blank" title=" Cybereason on Linkedin ">Cybereason</a> :</strong> &nbsp;&nbsp; Test Automation Engineer & Functional QA</h2>
 		<div class="section-content">
 		<p>I Worked on a <strong>Cyber Security</strong> Defensive EDR-System (aimed to detect & prevent cyber attacks). Product deployed on GCP cloud, with Linux servers & Dockerized microservices, Configured using Consul & Mongo, &nbsp;and its Data stored in Aerospike & ElasticSearch.</p>
-		<p>I performed Functional & Automation QA tasks, as part of the Data-infra & HUNT solution Dev-Squad, working in Agile Methodologies.</p>
+		<p>I performed both <b>Automation</b> & <b>Functional</b> QA tasks, as part of the Data-infra & HUNT solution Dev-Squad.</p>
+		<p>Worked in <b>Agile</b> Methodologies (scrum teams & sprints of bite-size features,&nbsp; quick to reach production &nbsp;etc).</p>
 			<ul>
 				<li><strong>Automation</strong> (using Selenium & Java): Automated the Functional E2E Sanity-suite Test-cases, for CI Nightly-run:</li>
 					<ul>
 						<li>Implement & Automate E2E Test Cases of UI Functionality for Full Coverage, and add relevant Page elements to INFRA</li>
-						<li>Execute & Monitor Jenkins Nightly job (reporting to a Slack channel), and Run suite on demand, upon each Sanity Cycle</li>
+						<li>Execute & Monitor the Jenkins Nightly job, and Run Test suite on-demand, upon each Sanity Cycle & Check any Failure</li>
 					</ul>
 				<br>	
 				<li><strong>Functional</strong> (working with JIRA): Performed all Manual QA tasks  of the Hunt-Investigation UI solution:</li>
 					<ul>
-						<li>Review Feature-Designs and Requirements (with stakeholders: Product, Data Architect, UX & Developers)</li>
-						<li>Design Test Plan with Functional E2E Test Cases (STP \ STD) for full Coverage of Spec docs (SRD \ SRS)</li>
-						<li>Execution of Sanity, Progression & Regression testing cycles</li>
-						<li>Bugs Analysis & Open issues found, Validate fixes & Conclude Results in Status Report (STR)</li>
-						<li>Deploy Environments (on Linux VMs), Configure (in Consul), integrate (with Docker microservices)</li>
+						<li>Review Features'&nbsp; Design and Requirements &nbsp;(with stakeholders: Product, Data Architect, UX & Developers)</li>
+						<li>Design Test Plan&nbsp; with Functional E2E Test Cases (STP \ STD)&nbsp; for full Coverage of Spec docs (SRD \ SRS)</li>
+						<li>Execution of – Sanity (before production), Progression (for each new feature) & Regression testing cycles</li>
+						<li>Failure Analysis of issues found, Open Bugs, Validate Fixes & Conclude Results in Status Report (STR)</li>
+						<li>Deploy Environments (GCP \ Linux VMs), Configure (in Consul), integrate (with Docker microservices)</li>
 						<li>Knowledge Transfer to Train new employees, Wrote How-to Wikis on a shared location (Confluence)</li>
 					</ul>
 			</ul>
-		<p>&nbsp;&#128073;&nbsp; <strong>Recommenders</strong> ( <i>former directors managers & peers</i> ) &nbsp;–&nbsp; Available, and would be supplied upon request (with advance notice).</p>
+		<p>&nbsp;&#128073;&nbsp; <strong>Recommenders</strong> (former directors, managers & peers) &nbsp;–&nbsp; Available, &nbsp;and would be supplied upon request, &nbsp;with advance notice.</p>
 		</div>
 		<br>
 		<!-- HPE -->
-		<h2 class="title"><strong>09/2012 – 12/2017 &nbsp;&nbsp; | &nbsp;&nbsp; HPE</strong> &nbsp;( former hp mercury ) <strong>:</strong> &nbsp;&nbsp; Senior QA Engineer</h2>
+		<h2 class="title"><strong>09/2012 – 01/2018 &nbsp;&nbsp; | &nbsp;&nbsp; HPE</strong> &nbsp;( former hp mercury ) <strong>:</strong> &nbsp;&nbsp; Senior Software QA Engineer</h2>
 		<div class="section-content">
-		<p>Worked on a <strong>Monitoring Apps</strong> Product (deployed on Linux Servers with DBs: PostgreSQL Vertica & Radis),  for Tracking & Measure User Experience on Mobile \ Web Applications (availability, performance, response-time & user behavior within application).</p>
-		<p>I performed Functional QA (working with QC): Requirements Review, Plan & Execute Manual Tests, Analyze & Report Bugs (and more).</p>
-		<p>Worked in Agile Lifecycle (scrum teams & sprints of bite-size features, quick to reach production).</p>
+		<p>Worked on an <strong>Apps' Monitoring</strong> Product (deployed on Linux Servers with DBs: Vertica, PostgreSQL, Radis), for Tracking & Measure User Experience on Mobile and Web Applications (availability, performance, response-time & user behavior within application).</p>
+		<p>My Responsibilities were mainly to perform <b>Functional</b> QA tasks (working with QC) &nbsp; – &nbsp; Worked in <b>Agile</b> Lifecycle.</p>
+			<ul>
+				<li>Review: Requirements, System specifications, Release notes, Help documents</li>
+				<li>Tests Design: High-Level Test Plan & write Test Cases (of full coverage)</li>
+				<li>Tests Execution: Manual E-2-E, Functional Progression, UI, API, Data Correctness & Integration Testing</li>
+				<li>Manage Bugs: Find, Analyze, Open & Validate and conclude in Report</li>
+				<li>Maintain Test Env: Managed Virtualization (VMs) & Labs Deployment (install, config, integrate)</li>
+				<li>Automation (using Selenium framework): Edit Scripts, Execute, Analyze Results</li>
+			</ul>
 		</div>
 		<br>
 		<!-- Comverse -->
-		<h2 class="title"><strong>08/2008 – 08/2012 &nbsp;&nbsp; | &nbsp;&nbsp; Comverse</strong> &nbsp;( currently xura ) <strong>:</strong> &nbsp;&nbsp; Manual QA Engineer</h2>
+		<h2 class="title"><strong>08/2008 – 08/2012 &nbsp;&nbsp; | &nbsp;&nbsp; Comverse</strong> &nbsp;( currently xura ) <strong>:</strong> &nbsp;&nbsp; QA Engineer</h2>
 		<div class="section-content">
-		<p>Worked on a <strong>Telecom Instant-Messages</strong> Product (deployed on Linux Servers & Oracle DB),  for Managing Mobile IM systems.</p>
-		<p>I performed Manual QA: Review Design, Write & Execute Tests, Report & Manage Bugs, Deploy Labs etc.</p>
-		<p>Was part of a Task-force doing Acceptance Testing for products deployed at 3 Customers Sites in North-America (VzW, Rogers, AT&T).</p>
-		<p>Worked in Waterfall Lifecycle (as part of QA team,&nbsp; getting huge content per each delivery, with long time till features reach production).</p>
+		<p>Worked on a <strong>Telecom Instant-Messages</strong> Product (deployed on Linux Servers & Oracle DB), aimed for Mobile IM systems.</p>
+		<p>I performed <b>Manual QA</b>: Review Designs, Write & Execute Tests, Report & Manage Bugs, Deploy Labs etc.</p>
+		<p>Was part of <b>ATP</b> Task-force (acceptance tests) done on products deployed at 3 Customer Sites in North-America (VzW, Rogers, AT&T).</p>
+		<p>Worked in <b>Waterfall</b> Lifecycle (as part of QA team,&nbsp; getting huge content per each delivery, with long time till features reach production).</p>
 		</div>
 		<br>
 		<!-- TripCart -->
 		<h2 class="title"><strong>05/2006 – 07/2008 &nbsp;&nbsp; | &nbsp;&nbsp; TripCart.com</strong> &nbsp;( currently obsolete ) <strong>:</strong> &nbsp;&nbsp; QA Tester</h2>
 		<div class="section-content">
-		<p>Worked on a <strong>Travel Planning website</strong> Product (deployed on Windows Server & MS-SQL DB) from its initial state.</p>
-		<p>I Oversaw Quality (during development): Features Review, Write & Execute Tests (manual & performance-response-time), Manage Bugs.</p>
+		<p>Worked on a <strong>Travel Planning website</strong> Application (deployed on Windows Server & MS-SQL DB), from its initial start-up state.</p>
+		<p>Oversaw Quality (during development): Features Review, Write & Execute Tests (ui, functional, correctness & response-time), Manage Bugs found. And also, did Monetization Optimizations (with Google Analytics & AdWords), to improve & increase revenue performance.</p>
 		</div>
 		<br>
 		<!-- Ness -->
@@ -222,7 +236,7 @@
 		<div class="content-header">
 			<h3>
 				<a href="https://www.linkedin.com/in/elad-luz/" target="_blank" title=" Elad Luz  |  Linkedin ">
-					<strong>&Gt; &nbsp;&nbsp;&nbsp;&nbsp; Click to view my Linkedin &nbsp;&nbsp;&nbsp;&nbsp; &Lt;</strong>
+					<strong>&Gt; &nbsp;&nbsp;&nbsp;&nbsp; Click to view my Linkedin profile &nbsp;-and-&nbsp; to contact me via Linkedin &nbsp;&nbsp;&nbsp;&nbsp; &Lt;</strong>
 				</a>
 			</h3>
 		</div>
