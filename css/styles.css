@@ -55,7 +55,7 @@ img {
 }
 
 img:hover { /* on mouse-over */
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 /* note: ".class" could be implemented (one or more) in varied places as class="name1 name2" (without the dot) -
@@ -111,6 +111,23 @@ could also use: .margin-bottom{ margin-bottom: 15px; } if needed... */
 .left-nav ul li a:hover, .left-nav ul li .current { /* change design on hover (mouse-over) */
     background-color: #fff;  /* white */
     color: #000; /* black */
+}
+.styled { /* style for button */
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover { /* style for button hover */
+    background-color: rgba(255, 0, 0, 1);
 }
 
 /*  note: "#" specific tag design by id ->
