@@ -55,7 +55,7 @@ img {
 }
 
 img:hover { /* on mouse-over */
-	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+	box-shadow: 0 0 4px 1px rgb(250, 225, 0);
 }
 
 /* note: ".class" could be implemented (one or more) in varied places as class="name1 name2" (without the dot) -
